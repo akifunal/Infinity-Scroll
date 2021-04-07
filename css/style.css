@@ -45,7 +45,10 @@ header > h1 {
 
 /* Image Container */
 .image-container {
-  margin: 10px 30%;
+  /* margin: 10px 30%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .image-container > img {
@@ -62,5 +65,15 @@ header > h1 {
 
   .image-container {
     margin: 10px;
+    flex: 1 1 30px;
+  }
+
+  .image-container a {
+    display: flex;
+  }
+
+  .image-container a img {
+    display: block;
+    flex-basis: 30%;
   }
 }
